@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!--Navbar section  -->
+    <header class="section1">
+        
+        <nav id="nav" class="navbar">
+            <div class="name">
+                <p>Shogun's Table</p>
+            </div>
+            <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+
+
+        <!-- background -->
+        <section class="background">
+            <video id="video" autoplay muted loop playsinlin>
+                <source src="cooking.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="hero" class="hero">
+            <h1>Welcome to <span id="shogun">Shogun's Table</span></h1>
+            <p>Home of the most delicate asian cuisine in NY</p>
+            <a href="#footer"><i id="arrow" class="fa fa-chevron-down"></i></a>
+        </section>
+    </header>
+
+    <!-- Menu section -->
+    <section id="menu" class="menu">
+        <br>
+        <div class="container">
+            <div class="row">
+                <div id="side1" class="col-sm-2">
+                    <h1></h1>
+                </div>
+               
+               
+                <div id="side2" class="col-sm-8">
+                    <i id="moon" class="fa-solid fa-circle-half-stroke"></i><br>
+                    <h1>Menu</h1>
+                    <!-- Meny items -->
+                        <!-- Item 1 -->
+                        <div id="item1" class="row">
+
+                            <div class="col-sm-6">
+                                <h2>Tonkotsu Garlic Ramen</h2>
+                                <p>Tonkotsu Garlic Ramen is a rich and flavorful Japanese noodle dish featuring a creamy, slow-simmered pork bone broth infused with aromatic garlic. </p>
+                            </div>
+                            <div class="col-sm-6">
+                                <br><h2>$18.00</h2>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div id="item2" class="row">
+
+                            <div class="col-sm-6">
+                                <h2>Sushi Mix</h2>
+                                <p>A beautifully arranged assortment of fresh, hand-crafted sushi featuring a variety of flavors and textures. This platter includes a selection of nigiri (slices of premium fish atop seasoned sushi rice), such as buttery salmon, rich tuna, delicate yellowtail, and sweet shrimp. Complementing the nigiri are makimono rolls, like classic California rolls, spicy tuna rolls, and cucumber rolls for a refreshing bite.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <br><br><h2>$35.00</h2>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div id="item3" class="row">
+
+                            <div class="col-sm-6">
+                                <h2>Stir Fry</h2>
+                                <p>A vibrant and flavorful stir-fry packed with tender, wok-seared protein (chicken, beef, shrimp, or tofu) and a colorful mix of crisp bell peppers, broccoli, snap peas, and carrots.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <br><h2>$17.00</h2>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div id="item4" class="row">
+
+                            <div class="col-sm-6">
+                                <h2>Kimchi</h2>
+                                <p>A bold and flavorful Korean staple made from fermented napa cabbage and daikon radish, coated in a spicy, umami-rich seasoning blend. This traditional dish is crafted with gochugaru</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <br><br><h2>$10.00</h2>
+                            </div>
+                        </div>
+                        <i id="moon2" class="fa-solid fa-circle-half-stroke"></i>
+                </div>
+                
+                
+                <div id="side3" class="col-sm-2">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div id="foodpics" class="col-sm-7 text-center">
+                    <div class="row">
+                        <img src="ramen.jpg" alt="Image of ramen">
+                        <p>Tonkotsu Garlic Ramen</p>
+                    </div>
+                    <div class="row">
+                        <img src="sushi.jpg" alt="Image of sushi">
+                        <p>Sushi Mix</p>
+                    </div>
+                    <div class="row">
+                        <img src="stir.jpg" alt="Image of stir">
+                        <p>Stir Fry</p>
+                    </div>
+                    <div class="row">
+                        <img id="kimchi" src="kimchi.jpg" alt="Image of kimchi">
+                        <p>Kimchi</p>
+                    </div>
+                </div>
+                <div id="about" class="col-sm-5">
+                    <h1>About us</h1>
+                    <hr style="border-top: 1px solid grey;">
+                    <p>Welcome to <span style="font-family: 'Zen Tokyo Zoo';">Shogun's Table</span>, a dining experience that brings the vibrant flavors of Asia straight to your doorstep. Inspired by the rich culinary traditions of East and Southeast Asia, we craft every dish with authentic ingredients, bold flavors, and a modern twist. Whether you're craving the comforting warmth of ramen, the sizzling spice of Thai curry, or the delicate artistry of sushi, our expertly curated menu takes you on a journey through Asia's diverse food culture. With a focus on convenience, quality, and innovation, we invite you to explore a world of taste.</p>
+                    <hr style="border-top: 1px solid grey;">
+                    <p>To the left are some of our signature dishes made by authetnic chefs with pure profession in their hearts. We use top-shelf ingredients, from fish to seasonings.</p>
+                    <p>Come dine with you and enjoy the culture-filled space and we guarantee you a once-in-a-lifetime evening. Make sure to check out our weekly schedule page to stay updated on the latest events.</p>
+                    <hr style="border-top: 1px solid grey;">
+                    <i id="moon3" class="fa-solid fa-circle-half-stroke"></i>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+        <i id="moon4" class="fa-solid fa-circle-half-stroke"></i>
+        <h1 style="text-align: center;font-family: 'Zen Tokyo Zoo';padding-top: 5%;font-size: 45px;font-weight: 400;color:white">Contact</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 mx-auto">
+                    <form class="formname">
+                        <div class="sname">
+                            <input type = "text" placeholder = "First Name">
+                            <input type = "text" placeholder = "Last Name">
+                        </div><br>
+    
+                        <input type = "text" placeholder="Email"><br><br>
+                        <textarea placeholder="Things to say."></textarea><br>
+                        <input type="submit" value="Submit you message">
+                    </form>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+        <i id="moon5" class="fa-solid fa-circle-half-stroke"></i>
+    </section>
+
+    <!-- Footer section -->
+    <footer id="footer">
+        <a href="#nav" id="arrowcontainer"><i id="arrow2" class="fa fa-chevron-up"></i></a>
+        <div class="container">
+            <div id="foot" class="row mx-auto text-center">
+                <div class="col-sm-6">
+                    <br><p>&copy; 2025 Shogun's Table. All rights reserved.</p>
+                </div>
+                <div class="col-sm-6">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

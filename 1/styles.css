@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Zen+Tokyo+Zoo&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.section1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.navbar{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(69, 73, 84, 0.293);
+    height: 70px;
+    width: 100%;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+}
+
+.navlinks li{
+    padding: 30px 30px 19px 30px;
+    transition: background-color 0.5s ease;
+}
+
+.navbar li:hover{
+    background-color: rgba(46, 47, 50, 0.667);
+}
+
+.navlinks li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.838);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    transition: color 0.5s ease;
+}
+
+.navlinks li a:hover{
+    color: white;
+}
+
+.name{
+    font-size: 25px;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    padding: 30px 30px 19px 30px;
+    margin-right: 100px;
+}
+
+.hero{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding-top: 20%;
+    height: 100%;
+}
+
+.hero h1{
+    font-size: 50px;
+    font-family: 'Poppins';
+}
+
+.hero p{
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 200;
+}
+
+#shogun{
+    font-family: 'Zen Tokyo Zoo';
+}
+
+#arrow{
+    margin-top: 190px;
+}
+
+.menu{
+    background-color: rgb(9, 9, 9);
+    color: white;
+    border-top: 2px solid rgb(151, 151, 151);
+    border-bottom: 2px solid rgb(151, 151, 151);
+    height: auto;
+}
+
+#side2{
+    text-align: center;
+    font-family: 'Zen Tokyo Zoo';
+    padding-top: 30px;
+}
+
+#side2 h1{
+    font-size: 50px;
+}
+
+#moon{
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+#moon2{
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+#moon3{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#moon4{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+#moon5{
+    font-size: 50px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#item1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#item2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#item3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#item4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#item1 h2{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 100;
+}
+#item1 p{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#item2 h2{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 100;
+}
+#item2 p{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#item3 h2{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#item3 p{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#item4 h2{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#item4 p{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.about{
+    border-top: 2px solid rgb(151, 151, 151);
+    border-bottom: 2px solid rgb(151, 151, 151);
+}
+
+#about h1{
+    text-align: center;
+    font-family: 'Zen Tokyo Zoo';
+    padding-top: 50%;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+#about p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 250;
+    color: black;
+}
+
+#foodpics{
+    padding-top: 60px;
+    
+}
+
+#foodpics img{
+    max-width: 350px;
+    max-height: 350px;
+    margin: 25px 0 25px;
+    border: 2px solid #c0c0c0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#foodpics p{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+}
+
+.formname{
+    background-color: rgba(0, 0, 0, 0.221);
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.formname input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgba(3, 3, 3, 0.034);
+    border-radius: 2px;
+    transition: border 0.3s ease;
+    background-color: rgba(3, 3, 3, 0.034);
+    color: rgba(255, 255, 255, 0.751);
+    transition: border-color 0.5 ease;
+}
+
+.formname input[type="text"]:hover{
+    border-color: rgba(135, 135, 135, 0.761);
+}
+
+.formname textarea{
+    resize: vertical;
+    border: 2px solid rgba(3, 3, 3, 0.034);
+    border-radius: 2px;
+    background-color: rgba(3, 3, 3, 0.034);
+    transition: border 0.3s ease;
+    height: 200px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.751);
+    transition: border-color 0.5 ease;
+}
+
+.formname textarea:hover{
+    border-color: rgba(135, 135, 135, 0.761);
+}
+
+.sname {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    width: 100%;
+}
+
+.contact{
+    background-color: rgb(9, 9, 9);
+    border-top: 1px solid rgb(151, 151, 151);
+    height: auto;
+}
+
+.formname input[type="submit"]{
+    background-color: rgba(3, 3, 3, 0.034);
+    color: rgba(153, 153, 153, 0.589);
+    padding: 10px;
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border-color: #cccccc19;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+.formname input[type="submit"]:hover{
+    
+    background-color: rgba(36, 36, 36, 0.761);
+}
+
+footer{
+    background-color: rgba(9, 9, 9);
+}
+
+.fa{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.hero a{
+    text-decoration: none;
+    color: rgb(186, 186, 186);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.hero a:visited{
+    color: rgb(186, 186, 186);
+}
+
+.hero a:hover{
+    color: white;
+}
+
+#arrow2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#arrowcontainer{
+    text-decoration: none;
+}
+
+#arrowcontainer i{
+    color: rgb(186, 186, 186);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#arrowcontainer i:visited{
+    color: rgb(186, 186, 186)
+}
+
+#arrowcontainer i:hover{
+    color: white;
+}
