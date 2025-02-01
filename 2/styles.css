@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Zen+Tokyo+Zoo&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 10px;
+}
+
+
+body::-webkit-scrollbar-track{
+    background: rgb(186, 186, 186);
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.navbar{
+    width: 6rem;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.086);
+    position: fixed;
+    z-index: 3;
+    transition: background-color 0.3s ease;
+
+}
+
+.navbar:hover{
+    background-color: rgba(0, 0, 0, 0.222);
+}
+
+.navbar-nav, .navbar i{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2;
+}
+
+.fa-solid{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.329);
+    font-size: 22px;
+    transition: color 0.2s ease;
+}
+
+.fa-solid:hover, .nav-item span:hover{
+    color:white;
+}
+
+.nav-item a{
+    text-decoration: none;
+}
+
+.nav-item{
+    width: 100%;
+    padding: 40px 0 40px 9px;
+    letter-spacing: 1px;
+    line-height: 14px;
+}
+
+.nav-item span{
+    font-family: 'Montserrat';
+    color: #999999;
+    font-weight: 300;
+    font-size: 16px;
+    display: none;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+}
+
+
+#logo {
+    text-decoration: none;
+}
+
+.hero{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    height: 100%;
+    padding-top: 20%;
+}
+
+
+.hero h1{
+    font-size: 50px;
+    font-family: 'Zen Tokyo Zoo';
+}
+
+.hero p{
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 200;
+}
+
+.destination-left{
+    background-color: rgba(49, 49, 50, 0.059);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pic-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    padding-top: 15%;
+}
+
+.pic-container img{
+    opacity: 80%;
+    width: 350px;
+    height: 200px;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pic-container img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-pic{
+    width: 268px;
+    height: 180px;
+    background-color: rgba(49, 49, 50, 0.059);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.card-pic:hover{
+    transform: scale(1.05);
+}
+
+.card{
+    background-color: blue;
+    width: 268px;
+    background-color: rgba(49, 49, 50, 0.059);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cards-container{
+    padding: 10%;
+    padding-bottom: 0;
+}
+
+.card-title{
+    font-size: 25px;
+    color: white;
+    font-family: 'Montserrat';
+    text-align: center;
+    font-style: italic;
+    font-weight: 250;
+}
+
+.card-text{
+    font-weight: 250;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    color: rgba(208, 208, 208, 0.942);
+    font-style: italic;
+    padding: 15px;
+}
+
+.btn{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 49, 50, 0.059);
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 150;
+    color: rgb(206, 206, 206);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: rgba(49, 49, 50, 0.455);
+}
+
+.accordion {
+    border: none;
+    padding-top: 20px;
+}
+
+.accordion-button, .accordion-button:not(.collapsed){
+    font-size: 20px;
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-weight: 150;
+    border: 2px solid black;
+}
+
+.accordion-body{
+    background-color: rgb(39, 39, 39);
+    color:rgb(206, 206, 206);
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 15px;
+
+}
+
+.accordion-item {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+/* https://getbootstrap.com/docs/5.0/components/accordion/#accessibility */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"]{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgba(3, 3, 3, 0.034);
+    border-radius: 2px;
+    transition: border 0.3s ease;
+    background-color: rgba(3, 3, 3, 0.251);
+    color: rgba(255, 255, 255, 0.751);
+    transition: border-color 0.5 ease;
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+
+.form-group textarea{
+    resize: vertical;
+    border: 2px solid rgba(3, 3, 3, 0.034);
+    border-radius: 2px;
+    background-color: rgba(3, 3, 3, 0.034);
+    transition: border 0.3s ease;
+    height: 200px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.751);
+    transition: border-color 0.5 ease;
+}
+
+.form-group textarea:focus{
+    background-color: rgba(3, 3, 3, 0.034);
+    border-color: rgba(255, 255, 255, 0.751);
+}
+
+.form-group textarea::placeholder{
+    color: rgba(255, 255, 255, 0.751);
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.form-group label{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: white;
+    text-align: left !important;
+    display: none;
+}
+
+.form-group input::placeholder{
+    color: rgba(255, 255, 255, 0.751);
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+
+.form-group input:focus{
+    border-color: rgba(255, 255, 255, 0.751);
+}
+
+.tours{
+    margin: 200px;
+    padding: 200px;
+}
+
+.contact{
+    margin: 200px 0 100px 0;
+}
+
+.fa-brands{
+    padding: 20px;
+    font-size: 20px;
+}
+.brands a{
+    text-decoration: none;
+}
+
+.fa-facebook, .fa-square-x-twitter, .fa-tiktok, .fa-instagram{
+    color: white;
+}
+
+footer p{
+    font-size: 12px;
+}
