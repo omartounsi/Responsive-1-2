@@ -1,0 +1,8 @@
+Design:
+
+-Very miniamlist design with a lot of open space between elements to highlight only what's needed to be looked at
+
+-Very limited color palette to emphasize the design choise (Wine purple and Pink white)
+
+Responsiveness:
+-Fully responsive on both desktop and mobile (including navbar orientation) all made using flexbox
