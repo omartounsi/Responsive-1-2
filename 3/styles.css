@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+
+:root{
+    font-size: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f2edeb;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #5b2333;
+    border-radius: 10px;
+}
+
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar{
+    width: 4rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #5b2333e0;
+    transition: width 0.2s ease;
+    border:3px solid #431622ae;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    
+}
+
+.nav-item{
+    width: 100%;
+    height: 2rem;
+    font-size: 2rem;
+    margin: 2rem 0 2rem;
+    padding: 2rem 0 2rem;
+}
+
+.nav-item:hover{
+    background-color: #461825;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover{
+    color: white;
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+}
+
+.nav-text{
+    font-size: 20px;
+    padding: 5px;
+    font-style: italic;
+    display: none;
+}
+
+.navbar:hover{
+    width: 12rem;
+}
+.navbar:hover .nav-item{
+    text-align: left;
+}
+
+.navbar:hover .nav-text{
+    display: block;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Open Sans';
+}
+
+.title{
+    font-family: 'satoshi';
+    font-size: 5rem;
+    color: #5B2333;
+    line-height: 1px;
+    word-wrap: normal;
+}
+
+.title p{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.products{
+    padding-top: 2rem;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 4rem 0 4rem;
+}
+
+.card-img{
+    width: 286px;
+    height: 179px;
+    border: 2px solid #c0c0c0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.description{
+    margin: 10rem 0 10rem;
+}
+
+.description-header{
+    font-family: 'satoshi';
+    font-size: 35px;
+    font-weight: 400;
+    color: rgba(9, 9, 9, 0.783);
+}
+
+.description-content{
+    font-family: 'satoshi';
+    font-weight: 400;
+    font-size: 25px;
+    color: rgba(9, 9, 9, 0.783);
+}
+
+.products h2, .about-title{
+    font-family: 'satoshi';
+    font-size: 35px;
+    font-weight: 400;
+    color: rgba(9, 9, 9, 0.783);
+}
+
+.title-price{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-title, .price{
+    font-family: 'satoshi';
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(9, 9, 9, 0.783);
+}
+
+.card-description{
+    font-family: 'satoshi';
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(9, 9, 9, 0.783);
+    width: 286px;
+    text-align: center;
+}
+
+.card-button{
+    width: 100%;
+    padding: 5px;
+    font-family: 'satoshi';
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(9, 9, 9, 0.783);
+    border: 1px solid rgb(140, 139, 139);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.card-button:hover{
+    border: 1px solid #979797;
+    background-color: rgb(233, 233, 233);
+}
+
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    padding-top: 8rem;
+    flex-wrap: wrap;
+}
+
+.about-img{
+    max-width: 486px;
+    max-height: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    flex-shrink: 1;
+}
+
+
+
+.about-left{
+    display: flex;
+    
+}
+
+.about-right{
+    width: 25rem;
+}
+
+.about-content{
+    font-family: 'satoshi';
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(9, 9, 9, 0.783);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    padding-top: 10rem;
+}
+
+.form-name{
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.form-name input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border: 1px solid #5B2333;
+    background-color: #5b23331c;
+    font-family: 'satoshi';
+    font-weight: 500;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.form-name input:focus{
+    outline: none;
+    border: 1px solid #6f1a32;
+}
+
+.form-name input:hover{
+    background-color: #5b233336;
+}
+
+.email{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border: 1px solid #5B2333;
+    background-color: #5b23331c;
+    font-family: 'satoshi';
+    font-weight: 500;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.email:focus{
+    outline: none;
+    border: 1px solid #b23256;
+}
+
+.email:hover{
+    background-color: #5b233336;
+}
+
+#message{
+    width: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+    height: 15rem;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border: 1px solid #5B2333;
+    background-color: #5b23331c;
+    font-family: 'satoshi';
+    font-weight: 500;
+    padding: 5px;
+
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+#message:focus{
+    outline: none;
+    border: 1px solid #b23256;
+}
+
+#message:hover{
+    background-color: #5b233336;
+}
+
+#send{
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    font-family: 'satoshi';
+    border: 1px solid #5B2333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send:hover{
+    background-color: #5b233336;
+}
+
+.contact-title h2{
+    text-align: center;
+    font-family: 'satoshi';
+    font-size: 35px;
+    font-weight: 400;
+    color: #5B2333;
+}
+
+footer p{
+    font-family: 'satoshi';
+    font-size: 1rem;
+    color: #5B2333;
+}
+
+
+/* for smaller screens */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+    .about.img {
+        max-width: 80;
+    }
+}
+/*  */
